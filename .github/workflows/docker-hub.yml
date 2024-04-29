@@ -36,8 +36,8 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: somfyProtect2Mqtt/
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64,linux/armv71
           push: true
           tags: |
-            minims/somfyprotect2mqtt:latest
-            minims/somfyprotect2mqtt:${{  github.ref_name }}
+            lorenzomartini/somfyprotect2mqtt:latest
+            lorenzomartini/somfyprotect2mqtt:${{  github.ref_name }}
